@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> handleSignIn() async {
     GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
     GoogleSignInAuthentication googleSignInAuthentication =
-        await googleSignInAccount.authentication;
+    await googleSignInAccount.authentication;
 
     AuthCredential credential = GoogleAuthProvider.getCredential(
         idToken: googleSignInAuthentication.idToken,
